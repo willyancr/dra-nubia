@@ -9,8 +9,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Dra. Nubia",
-  description: "Médica Reumatologista Pediátrica",
+  title: "Dra. Nubia | Médica Reumatologista Pediátrica",
+  description:
+    "Especialista em reumatologia pediátrica, oferecendo um atendimento humanizado e personalizado para crianças com doenças reumatológicas. Agende uma consulta e proporcione mais qualidade de vida ao seu pequeno.",
 };
 
 export default function RootLayout({
