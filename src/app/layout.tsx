@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${poppins.className} antialiased`}>{children}</body>
+      <body className={`${poppins.className} max-w-[1200px] bg-[#A7D1E6]/15 mx-auto antialiased`}>{children}</body>
     </html>
   );
 }

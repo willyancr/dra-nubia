@@ -10,7 +10,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="w-full bg-[#A7D1E6]/15">
+    <header className="w-full">
       <div className="container items-center">
         <Image
           src="/logo.png"
