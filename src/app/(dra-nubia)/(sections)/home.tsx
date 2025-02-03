@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="h-screen w-full bg-[#A7D1E6]/15">
+    <div className="h-[800px] w-full bg-[#A7D1E6]/15 overflow-hidden">
       <div className="container flex flex-col">
         <div className="flex items-center justify-center gap-4 pt-8">
           <div className="flex flex-col gap-2">
@@ -43,7 +43,7 @@ export default function Home() {
             quality={100}
           />
         </div>
-        <div>
+        {/* <div>
           <Image
             src="/vector.png"
             alt="Hero"
@@ -52,7 +52,7 @@ export default function Home() {
             quality={100}
             className="opacity-50"
           />
-        </div>
+        </div> */}
       </div>
       <div className=""></div>
     </div>
