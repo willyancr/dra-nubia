@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full  overflow-hidden">
+    <div id="home" className="h-[700px] w-full overflow-hidden">
       <div className="container flex flex-col">
         <div className="flex items-center justify-center gap-4 pt-8">
           <div className="flex flex-col gap-2">
