@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="w-full bg-[#A7D1E6]/15">
-      <div className="container">
+      <div className="container items-center">
         <Image
           src="/logo.png"
           alt="Logo Dra. Nubia"
@@ -25,7 +25,7 @@ export default function Header() {
               <li key={item.id}>
                 <Link
                   href={item.href}
-                  className="transition-all hover:text-[#0196FF]"
+                  className="transition-all hover:text-tertiary"
                 >
                   {item.title}
                 </Link>
