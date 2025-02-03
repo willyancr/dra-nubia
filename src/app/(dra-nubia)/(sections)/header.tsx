@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
   const navItemsHome = [
     { id: 1, title: "Home", href: "/#home" },
-    { id: 2, title: "Sobre Mim", href: "/#about" },
+    { id: 2, title: "Sobre mim", href: "/#about" },
     { id: 3, title: "Serviços", href: "/#services" },
     { id: 4, title: "Contatos", href: "/#contacts" },
   ];

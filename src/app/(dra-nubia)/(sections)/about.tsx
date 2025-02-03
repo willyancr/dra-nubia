@@ -57,7 +57,7 @@ export default function About() {
                 </li>
               ))}
             </ul> */}
-
+            <div className="my-10 w-full border-b-[1px] border-zinc-200" />
             {/* Doctor profile */}
             <div className="flex items-center gap-3 pt-4">
               <div className="h-12 w-12 overflow-hidden rounded-full bg-muted">
