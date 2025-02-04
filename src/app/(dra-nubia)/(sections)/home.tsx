@@ -66,17 +66,19 @@ export default function Home() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Button className="mt-4 w-fit bg-[#b5d5e2] text-zinc-900 transition-all hover:brightness-95">
-                    {" "}
-                    Agende a sua consulta{" "}
-                    <Image
-                      src="/icon_whatsapp.png"
-                      alt="WhatsApp"
-                      width={20}
-                      height={20}
-                      quality={100}
-                    />
-                  </Button>
+                  <a href="https://wa.me/5563984857092" target="_blank">
+                    <Button className="mt-4 w-fit bg-[#b5d5e2] text-zinc-900 transition-all hover:brightness-95">
+                      {" "}
+                      Agende a sua consulta{" "}
+                      <Image
+                        src="/icon_whatsapp.png"
+                        alt="WhatsApp"
+                        width={20}
+                        height={20}
+                        quality={100}
+                      />
+                    </Button>
+                  </a>
                 </motion.div>
                 <Stars />
               </motion.div>
