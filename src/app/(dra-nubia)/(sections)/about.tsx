@@ -2,10 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="container mx-auto max-w-6xl px-4 py-12 md:py-16"
-    >
+    <section id="about" className="container px-4 py-16">
       <div className="space-y-8">
         {/* Main content grid */}
         <div className="grid items-start gap-8 md:grid-cols-2">
