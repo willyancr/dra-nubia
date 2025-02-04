@@ -35,7 +35,7 @@ export default function Location() {
             <br />
             CEP: 77015-202
             <br />
-            Tel: (63) 98485-7092
+            Tel: (63) 99281-9154
           </p>
         </div>
       </div>

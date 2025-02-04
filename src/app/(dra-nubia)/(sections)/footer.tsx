@@ -28,7 +28,7 @@ export default function Footer() {
               </div>
               <div className="w-full">
                 <h3 className="font-semibold">Email:</h3>
-                <p className="text-sm">dra-nubia@gmail.com</p>
+                <p className="text-sm">nubiacarmo7@gmail.com</p>
               </div>
             </div>
           </div>
