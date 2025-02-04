@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import ButtonBackToTop from "@/components/button-back-to-top";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${poppins.className} max-w-[1200px] bg-[#A7D1E6]/15 mx-auto antialiased`}>{children}</body>
+      <body className={`${poppins.className} max-w-[1200px] bg-[#A7D1E6]/15 mx-auto antialiased`}>
+      {children}
+      <ButtonBackToTop />
+      </body>
     </html>
   );
 }

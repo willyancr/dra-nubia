@@ -32,6 +32,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
+          
 
           {/* Quick Links */}
           <div className="w-full">

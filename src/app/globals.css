@@ -116,3 +116,19 @@
     @apply bg-background text-foreground;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+/* scrollbar */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+/* cor de fundo do track */
+*::-webkit-scrollbar-track {
+  background: #25180f;
+}
+/* cor de fundo do thumb */
+*::-webkit-scrollbar-thumb {
+  background-color: #b38603;
+  border-radius: 14px;
+}
