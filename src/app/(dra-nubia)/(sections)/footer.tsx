@@ -48,7 +48,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/#about"
                   className="text-sm hover:text-tertiary hover:underline"
                 >
                   Sobre mim
@@ -56,7 +56,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services"
+                  href="/#services"
                   className="hover: text-sm hover:text-tertiary hover:underline"
                 >
                   Serviços
@@ -64,7 +64,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="/#contact"
                   className="hover: text-sm hover:text-tertiary hover:underline"
                 >
                   Contato
@@ -72,7 +72,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/location"
+                  href="/#location"
                   className="hover: text-sm hover:text-tertiary hover:underline"
                 >
                   Localização
