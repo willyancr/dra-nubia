@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="w-full space-y-2">
               <div className="w-full">
                 <h3 className="font-semibold">Horario de atendimento:</h3>
-                <p className="text-sm">8am-6pm (63) 98485-7092</p>
+                <p className="text-sm">8am-6pm (63) 99281-9154</p>
               </div>
               <div className="w-full">
                 <h3 className="font-semibold">Endereço:</h3>
@@ -32,7 +32,6 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          
 
           {/* Quick Links */}
           <div className="w-full">
@@ -91,11 +90,12 @@ export default function Footer() {
                 </RedirectMidiaSocial>
               </li>
               <li>
-                <RedirectMidiaSocial href="https://wa.me/5563984857092">
+                <RedirectMidiaSocial href="https://wa.me/5563992819154">
                   Whatsapp
                 </RedirectMidiaSocial>
               </li>
               <li>
+
                 <RedirectMidiaSocial href="https://www.youtube.com">
                   YouTube
                 </RedirectMidiaSocial>

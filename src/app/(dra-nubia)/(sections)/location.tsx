@@ -31,7 +31,7 @@ export default function Location() {
           <p className="text-gray-600">
             Edifício Comercial Urban Futuro
             <br />
-            Q. 201 Sul Avenida Joaquim Teotônio Segurado - Sala 2301
+            Q. 201 Sul Avenida Joaquim Teotônio Segurado - Sala 301
             <br />
             CEP: 77015-202
             <br />

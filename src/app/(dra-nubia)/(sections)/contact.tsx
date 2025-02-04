@@ -44,7 +44,7 @@ export default function ContactForm() {
       animate={isInView ? "visible" : "hidden"}
       variants={containerVariants}
       id="contact"
-      className="bg-image-bg-contact mx-auto my-16 flex max-w-6xl flex-col items-center justify-between overflow-auto px-6 py-16 lg:flex-row"
+      className="mx-auto my-16 flex max-w-6xl flex-col items-center justify-between overflow-auto bg-image-bg-contact px-6 py-16 lg:flex-row"
     >
       {/* Left Side - Contact Info */}
       <motion.div
@@ -70,7 +70,7 @@ export default function ContactForm() {
           alguém da nossa equipe.
         </motion.p>
         <motion.div variants={itemVariants}>
-          <a href="https://wa.me/5563984857092" target="_blank">
+          <a href="https://wa.me/5563992819154" target="_blank">
             <Button className="mt-4 w-fit bg-[#b5d5e2] text-zinc-900 transition-all hover:brightness-95">
               {" "}
               Agende a sua consulta{" "}

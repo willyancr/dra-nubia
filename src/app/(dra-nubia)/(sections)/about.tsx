@@ -53,7 +53,7 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="leading-relaxed text-muted-foreground text-zinc-900"
             >
-              Olá! Sou a <strong>Dra. Núbia</strong>, médica especializada em
+              Olá! Sou a <strong>Dra. Núbia Carmo</strong>, médica especializada em
               Reumatologia Pediátrica, dedicada ao cuidado e bem-estar das
               crianças com doenças reumatológicas. Meu compromisso é oferecer um
               atendimento{" "}

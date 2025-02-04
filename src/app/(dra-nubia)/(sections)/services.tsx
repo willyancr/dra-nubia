@@ -8,7 +8,7 @@ const services = [
   {
     title: "Diagnóstico e Avaliação",
     description:
-      "O diagnóstico preciso é a primeira etapa para oferecer um atendimento eficaz. Realizamos avaliações abrangentes, inclusive avaliações médicas detalhadas.",
+      "O diagnóstico preciso e precoce é a primeira etapa para oferecer um atendimento eficaz. Realizamos avaliações abrangentes, inclusive avaliações médicas detalhadas.",
     icon: "🩺",
     image: "/image_service_1.png",
   },
@@ -36,14 +36,14 @@ const services = [
   {
     title: "Gestão da dor crônica",
     description:
-      "Crianças com condições reumáticas frequentemente sentem dor crônica. Oferecemos estratégias de gerenciamento da dor para reduzir o desconforto.",
+      "Crianças com condições reumáticas frequentemente sentem dor crônica. Oferecemos estratégias de controle da dor para reduzir o desconforto e melhorar a qualidade de vida.",
     icon: "🧑‍⚕️",
     image: "/image_service_5.png",
   },
   {
     title: "Atendimento Multidisciplinar",
     description:
-      "As condições reumáticas pediátricas geralmente exigem cuidados de especialistas em várias áreas. Colaboramos com fisioterapeutas, nutricionistas",
+      "As condições reumáticas pediátricas geralmente exigem cuidados de especialistas em várias áreas. Colaboramos com fisioterapeutas, nutricionistas e psicólogos.",
     icon: "🧑‍⚕️",
     image: "/image_service_6.png",
   },

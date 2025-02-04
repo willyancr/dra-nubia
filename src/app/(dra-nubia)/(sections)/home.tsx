@@ -47,7 +47,7 @@ export default function Home() {
               className="text-2xl font-medium text-tertiary"
               variants={itemVariants}
             >
-              Dra. Núbia
+              Dra. Núbia Carmo
             </motion.h1>
 
             <motion.p className="text-3xl font-bold" variants={itemVariants}>
@@ -55,9 +55,8 @@ export default function Home() {
             </motion.p>
 
             <motion.div className="text-sm" variants={itemVariants}>
-              Especialista em reumatologia pediátrica, oferecendo um atendimento
-              humanizado e personalizado para crianças com doenças
-              reumatológicas.
+              Especialista em reumatologia pediátrica, com foco na investigação
+              e no acompanhamento de doenças reumatológicas em crianças.
               <motion.div
                 className="flex items-center justify-between"
                 variants={itemVariants}
@@ -66,7 +65,7 @@ export default function Home() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <a href="https://wa.me/5563984857092" target="_blank">
+                  <a href="https://wa.me/5563992819154" target="_blank">
                     <Button className="mt-4 w-fit bg-[#b5d5e2] text-zinc-900 transition-all hover:brightness-95">
                       {" "}
                       Agende a sua consulta{" "}
