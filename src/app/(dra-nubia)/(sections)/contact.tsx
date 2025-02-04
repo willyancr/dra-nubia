@@ -5,9 +5,10 @@ import Image from "next/image";
 
 export default function ContactForm() {
   return (
-    <section className="mx-auto my-16 flex max-w-6xl flex-col items-center justify-between px-6 py-16 lg:flex-row">
+    <section id="contact" className="mx-auto my-16 flex max-w-6xl flex-col items-center justify-between px-6 py-16 lg:flex-row">
       {/* Left Side - Contact Info */}
       <div className="mb-8 text-left lg:mb-0 lg:w-1/2">
+
         <h3 className="text-lg font-semibold text-gray-900">Contate-nos</h3>
         <h2 className="mt-2 text-3xl font-bold text-tertiary">
           Entre em contato

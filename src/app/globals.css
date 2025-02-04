@@ -4,7 +4,7 @@
 
 @layer base {
   .container {
-    @apply mx-auto flex w-full  justify-between px-16 py-4 ;
+    @apply mx-auto flex w-full  justify-between px-12 py-4 ;
   }
   :root {
     --background: 0 0% 100%;

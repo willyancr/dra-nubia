@@ -6,7 +6,8 @@ export default function Header() {
     { id: 1, title: "Home", href: "/#home" },
     { id: 2, title: "Sobre mim", href: "/#about" },
     { id: 3, title: "Serviços", href: "/#services" },
-    { id: 4, title: "Contatos", href: "/#contacts" },
+    { id: 4, title: "Contatos", href: "/#contact" },
+    { id: 5, title: "Localização", href: "/#location" },
   ];
 
   return (
@@ -25,7 +26,7 @@ export default function Header() {
               <li key={item.id}>
                 <Link
                   href={item.href}
-                  className="transition-all hover:text-tertiary"
+                  className="underline-offset-4 transition-all hover:text-tertiary hover:underline"
                 >
                   {item.title}
                 </Link>

@@ -1,6 +1,6 @@
 export default function Location() {
   return (
-    <section className="w-full bg-white py-16">
+    <section id="location" className="w-full bg-[#F6D1DC]/15 py-16">
       <div className="mx-auto max-w-6xl px-4">
         {/* Title */}
         <div className="mb-12 text-center">
@@ -39,7 +39,6 @@ export default function Location() {
           </p>
         </div>
       </div>
-
     </section>
   );
 }
