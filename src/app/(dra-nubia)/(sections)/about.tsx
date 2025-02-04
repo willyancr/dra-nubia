@@ -22,7 +22,9 @@ export default function About() {
 
           <div className="space-y-6">
             <div className="space-y-2">
-              <h3 className="text-3xl font-bold tracking-tight">Sobre mim</h3>
+              <h3 className="text-3xl font-bold tracking-tight text-tertiary">
+                Sobre mim
+              </h3>
             </div>
             <p className="leading-relaxed text-muted-foreground">
               Olá! Sou a <strong>Dra. Núbia</strong>, médica especializada em
