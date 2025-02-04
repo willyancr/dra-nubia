@@ -1,5 +1,8 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -48,13 +51,34 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="h-[1150px] bg-[#F6D1DC]/15 my-16 py-16 text-center ">
-      <h2 className="text-3xl font-bold text-gray-900">
+    <section
+      id="services"
+      className="my-16 h-[1150px] bg-[#F6D1DC]/15 py-16 text-center"
+    >
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ margin: "-100px" }}
+        transition={{ duration: 0.5 }}
+        className="text-3xl font-bold text-gray-900"
+      >
+
         Serviços <span className="text-tertiary">Oferecidos</span>
-      </h2>
+      </motion.h2>
+
       <div className="mt-10 grid grid-cols-1 gap-6 px-6 md:grid-cols-3">
         {services.map((service, index) => (
-          <div key={index} className="group relative mb-52">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ margin: "-100px" }}
+            transition={{
+              duration: 0.5,
+              delay: index * 0.2,
+            }}
+            className="group relative mb-52"
+          >
             <Image
               src={service.image}
               alt={service.title}
@@ -65,20 +89,38 @@ export default function Services() {
             />
             <Card className="absolute bottom-0 left-1/2 h-full w-11/12 -translate-x-1/2 translate-y-3/4 transform rounded-lg bg-white p-3 shadow-lg md:w-10/12">
               <CardContent className="text-center">
-                <div className="text-4xl">{service.icon}</div>
-                <h3 className="mt-2 text-lg font-semibold text-gray-900">
+                <motion.div
+                  initial={{ scale: 0.8 }}
+                  whileInView={{ scale: 1 }}
+                  viewport={{ margin: "-100px" }}
+                  transition={{ duration: 0.3, delay: index * 0.2 + 0.3 }}
+                  className="text-4xl"
+                >
+                  {service.icon}
+                </motion.div>
+                <motion.h3
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ margin: "-100px" }}
+                  transition={{ duration: 0.3, delay: index * 0.2 + 0.4 }}
+                  className="mt-2 text-lg font-semibold text-gray-900"
+                >
                   {service.title}
-                </h3>
-                <p className="mt-2 text-sm text-gray-600">
+                </motion.h3>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ margin: "-100px" }}
+                  transition={{ duration: 0.3, delay: index * 0.2 + 0.5 }}
+                  className="mt-2 text-sm text-gray-600"
+                >
                   {service.description}
-                </p>
+                </motion.p>
               </CardContent>
             </Card>
-          </div>
+          </motion.div>
         ))}
       </div>
-      
     </section>
-
   );
 }
