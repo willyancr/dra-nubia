@@ -26,11 +26,15 @@ export default function Home() {
   };
 
   return (
-    <div id="home" className="h-[700px] w-full overflow-hidden" ref={ref}>
-      <div className="container flex flex-col">
-        <div className="flex items-center justify-center gap-4 pt-8">
+    <div
+      id="home"
+      className="relative h-[700px] w-full overflow-hidden"
+      ref={ref}
+    >
+      <div className="container relative mx-auto flex flex-col px-4">
+        <div className="flex flex-col items-center justify-center gap-4 space-y-8 pt-8 md:flex-row md:gap-8 md:space-y-0">
           <motion.div
-            className="flex w-1/2 flex-col gap-2"
+            className="flex w-full flex-col gap-2 md:w-1/2"
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
@@ -80,21 +84,24 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            className="relative flex w-full items-center justify-center md:w-1/2"
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <Image
-              src="/rectangle_foto1.png"
-              alt="Hero"
-              width={500}
-              height={400}
-              quality={100}
-            />
+            <div className="relative w-full max-w-[500px] overflow-hidden">
+              <Image
+                src="/rectangle_foto1.png"
+                alt="Hero"
+                width={500}
+                height={400}
+                quality={100}
+                className="h-auto w-full"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
-      <div className=""></div>
     </div>
   );
 }

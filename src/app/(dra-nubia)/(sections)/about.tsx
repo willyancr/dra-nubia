@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className="container px-4 py-16">
+    <section id="about" className=" px-4 py-32 bg-image-bg-about">
       <div className="space-y-8">
         {/* Main content grid */}
         <div className="grid items-start gap-8 md:grid-cols-2">
@@ -51,7 +51,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ margin: "-100px" }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="leading-relaxed text-muted-foreground"
+              className="leading-relaxed text-muted-foreground text-zinc-900"
             >
               Olá! Sou a <strong>Dra. Núbia</strong>, médica especializada em
               Reumatologia Pediátrica, dedicada ao cuidado e bem-estar das

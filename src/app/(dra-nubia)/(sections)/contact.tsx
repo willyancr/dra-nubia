@@ -44,8 +44,9 @@ export default function ContactForm() {
       animate={isInView ? "visible" : "hidden"}
       variants={containerVariants}
       id="contact"
-      className="mx-auto my-16 flex max-w-6xl flex-col items-center justify-between px-6 py-16 lg:flex-row"
+      className="mx-auto my-16 flex max-w-6xl flex-col items-center justify-between overflow-auto bg-image-bg-contact px-6 py-16 lg:flex-row"
     >
+
       {/* Left Side - Contact Info */}
       <motion.div
         variants={itemVariants}

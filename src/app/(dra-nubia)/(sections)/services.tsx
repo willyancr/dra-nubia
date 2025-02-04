@@ -53,7 +53,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="my-16 h-[1150px] bg-[#F6D1DC]/15 py-16 text-center"
+      className="h-[1150px] bg-[#F6D1DC]/15 py-16 text-center"
     >
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
@@ -62,7 +62,6 @@ export default function Services() {
         transition={{ duration: 0.5 }}
         className="text-3xl font-bold text-gray-900"
       >
-
         Serviços <span className="text-tertiary">Oferecidos</span>
       </motion.h2>
 
