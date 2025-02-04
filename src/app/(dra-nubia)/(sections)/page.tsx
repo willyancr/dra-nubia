@@ -4,6 +4,7 @@ import Header from "./header";
 import Home from "./home";
 import Services from "./services";
 import Location from "./location";
+import Footer from "./footer";
 
 export default function Sections() {
   return (
@@ -14,6 +15,7 @@ export default function Sections() {
       <Services />
       <ContactForm />
       <Location />
+      <Footer />
     </div>
   );
 }
