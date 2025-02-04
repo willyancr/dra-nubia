@@ -3,6 +3,7 @@ import ContactForm from "./contact";
 import Header from "./header";
 import Home from "./home";
 import Services from "./services";
+import Location from "./location";
 
 export default function Sections() {
   return (
@@ -12,6 +13,7 @@ export default function Sections() {
       <About />
       <Services />
       <ContactForm />
+      <Location />
     </div>
   );
 }
