@@ -86,7 +86,7 @@ export default function Services() {
               quality={100}
               className="h-64 w-full rounded-lg object-cover"
             />
-            <Card className="absolute bottom-0 left-1/2 h-full w-11/12 -translate-x-1/2 translate-y-3/4 transform rounded-lg bg-white p-3 shadow-lg md:w-10/12">
+            <Card className="absolute bottom-0 left-1/2 h-full w-11/12 -translate-x-1/2 translate-y-3/4 transform rounded-lg bg-white p-2 shadow-lg md:w-10/12">
               <CardContent className="text-center">
                 <motion.div
                   initial={{ scale: 0.8 }}

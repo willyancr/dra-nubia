@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${poppins.className} mx-auto max-w-[1200px] px-8 bg-[#A7D1E6]/15 antialiased`}
+        className={`${poppins.className} mx-auto max-w-[1200px] px-6 bg-[#A7D1E6]/15 antialiased`}
       >
         {children}
         <ButtonBackToTop />
