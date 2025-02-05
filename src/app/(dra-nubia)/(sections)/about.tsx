@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className="bg-image-bg-about px-4 py-32">
+    <section id="about" className="bg-image-bg-about px-4  py-32">
       <div className="space-y-8">
         {/* Main content grid */}
         <div className="grid items-start gap-8 md:grid-cols-2">

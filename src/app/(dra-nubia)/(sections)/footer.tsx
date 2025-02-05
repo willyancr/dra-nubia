@@ -4,7 +4,7 @@ import RedirectMidiaSocial from "@/components/redirect-midia";
 
 export default function Footer() {
   return (
-    <footer className="py-12">
+    <footer className="py-12 text-center sm:text-left">
       <div className="container mx-auto flex flex-col justify-center px-4">
         <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-3">
           {/* Logo */}
@@ -12,10 +12,10 @@ export default function Footer() {
             <Image
               src="/logo.png"
               alt="Logo Dra. Nubia"
-              width={150}
+              width={200}
               height={100}
               quality={100}
-              className="mb-4"
+              className="mx-auto mb-4 sm:mx-0"
             />
             <div className="w-full space-y-2">
               <div className="w-full">
@@ -95,7 +95,6 @@ export default function Footer() {
                 </RedirectMidiaSocial>
               </li>
               <li>
-
                 <RedirectMidiaSocial href="https://www.youtube.com">
                   YouTube
                 </RedirectMidiaSocial>
