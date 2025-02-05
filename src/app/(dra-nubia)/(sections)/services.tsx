@@ -53,7 +53,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="bg-[#F6D1DC]/15 py-16 text-center"
+      className="bg-image-bg-services py-16 text-center"
     >
       <motion.h2
         initial={{ opacity: 0, y: 20 }}

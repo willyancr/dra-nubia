@@ -13,6 +13,7 @@ const config: Config = {
         ["image-bg-about"]: "url(/bg-about.svg)",
         ["image-bg-contact"]: "url(/bg-contact.svg)",
         ["image-bg-home"]: "url(/bg-home.svg)",
+        ["image-bg-services"]: "url(/bg-services.svg)",
       },
       colors: {
         background: "hsl(var(--background))",
