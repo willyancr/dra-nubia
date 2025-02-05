@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className=" px-4 py-32 bg-image-bg-about">
+    <section id="about" className="bg-image-bg-about px-4 py-32">
       <div className="space-y-8">
         {/* Main content grid */}
         <div className="grid items-start gap-8 md:grid-cols-2">
@@ -53,8 +53,8 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="leading-relaxed text-muted-foreground text-zinc-900"
             >
-              Olá! Sou a <strong>Dra. Núbia Carmo</strong>, médica especializada em
-              Reumatologia Pediátrica, dedicada ao cuidado e bem-estar das
+              Olá! Sou a <strong>Dra. Núbia Carmo</strong>, médica especializada
+              em Reumatologia Pediátrica, dedicada ao cuidado e bem-estar das
               crianças com doenças reumatológicas. Meu compromisso é oferecer um
               atendimento{" "}
               <strong>humanizado, acolhedor e baseado na ciência</strong>,
@@ -87,11 +87,11 @@ export default function About() {
                   alt="Doctor profile"
                   width={48}
                   height={48}
-                  className="object-cover"
+                  quality={100}
                 />
               </div>
               <div>
-                <h4 className="font-semibold">Dra. Núbia</h4>
+                <h4 className="font-semibold">Dra. Núbia Carmo</h4>
                 <p className="text-sm text-muted-foreground">
                   Médica Reumatologista Pediátrica
                 </p>

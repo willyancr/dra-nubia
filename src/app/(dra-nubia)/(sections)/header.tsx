@@ -15,7 +15,7 @@ export default function Header() {
         <Image
           src="/logo.png"
           alt="Logo Dra. Nubia"
-          width={150}
+          width={200}
           height={100}
           quality={100}
         />

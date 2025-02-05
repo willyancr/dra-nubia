@@ -22,9 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${poppins.className} max-w-[1200px] bg-[#A7D1E6]/15 mx-auto antialiased`}>
-      {children}
-      <ButtonBackToTop />
+      <body
+        className={`${poppins.className} mx-auto max-w-[1200px] px-8 bg-[#A7D1E6]/15 antialiased`}
+      >
+        {children}
+        <ButtonBackToTop />
       </body>
     </html>
   );
