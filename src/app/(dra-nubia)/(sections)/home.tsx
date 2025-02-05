@@ -64,6 +64,7 @@ export default function Home() {
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
                   <a href="https://wa.me/5563992819154" target="_blank">
                     <Button className="mt-4 w-fit bg-[#b5d5e2] text-zinc-900 transition-all hover:brightness-95">
