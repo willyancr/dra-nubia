@@ -28,10 +28,10 @@ export default function Home() {
   return (
     <div
       id="home"
-      className="bg-image-bg-home-4 relative h-[700px] w-full overflow-hidden"
+      className="bg-image-bg-home-2 relative h-[720px] w-full overflow-hidden"
       ref={ref}
     >
-      <div className="container relative mx-auto flex flex-col px-4">
+      <div className="container relative mx-auto flex flex-col px-4 ">
         <div className="flex flex-col items-center justify-center gap-4 space-y-8 md:flex-row md:gap-8 md:space-y-0">
           <motion.div
             className="flex w-full flex-col gap-2 md:w-1/2"
