@@ -13,7 +13,8 @@ const config: Config = {
         ["image-bg-about"]: "url(/bg-about.svg)",
         ["image-bg-contact"]: "url(/bg-contact.svg)",
         ["image-bg-home"]: "url(/bg-home.svg)",
-        ["image-bg-home-1"]: "url(/bg-home-1.svg)",
+        ["image-bg-home-3"]: "url(/bg-home-3.svg)",
+        ["image-bg-home-2"]: "url(/bg-home-2.png)",
         ["image-bg-services"]: "url(/bg-services.svg)",
       },
       colors: {
