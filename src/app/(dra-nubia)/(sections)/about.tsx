@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { GraduationCap, Award, Building2, Users, Stethoscope } from "lucide-react";
 
 export default function About() {
   return (
@@ -55,16 +56,65 @@ export default function About() {
             >
               Olá! Sou a <strong>Dra. Núbia Carmo</strong>, médica especializada
               em Reumatologia Pediátrica, dedicada ao cuidado e bem-estar das
-              crianças com doenças reumatológicas. Meu compromisso é oferecer um
-              atendimento{" "}
-              <strong>humanizado, acolhedor e baseado na ciência</strong>,
-              garantindo que cada pequeno paciente receba o melhor tratamento
-              para uma vida mais saudável e ativa. Acredito na importância do
-              diagnóstico precoce e no acompanhamento próximo às famílias, para
-              que juntos possamos proporcionar mais qualidade de vida às
-              crianças. Se precisar de mais informações ou quiser agendar uma
-              consulta, estou à disposição!
+              crianças com doenças reumatológicas.
             </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ margin: "-100px" }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="space-y-4"
+            >
+              <div className="flex items-start gap-3">
+                <Stethoscope className="h-6 w-6 flex-shrink-0 text-primary" />
+                <p className="text-sm text-zinc-900">
+                  Médica Pediatra e Reumatopediatra CRMTO 3581/ RQE 2025 / RQE 3660
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <GraduationCap className="h-6 w-6 flex-shrink-0 text-primary" />
+                <p className="text-sm text-zinc-900">
+                  Graduada em Pedicina pelo Centro Universitário UNIRG (2014)
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Award className="h-6 w-6 flex-shrink-0 text-primary" />
+                <p className="text-sm text-zinc-900">
+                  Residência Médica em Pediatria pela Universidade Federal do Tocantins - UFT (2017)
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Award className="h-6 w-6 flex-shrink-0 text-primary" />
+                <p className="text-sm text-zinc-900">
+                  Residência Médica em Reumatologia Pediátrica pela Universidade Estadual de Campinas - UNICAMP (2024)
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Users className="h-6 w-6 flex-shrink-0 text-primary" />
+                <p className="text-sm text-zinc-900">
+                  Membro da Sociedade Brasileira de Pediatria
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Building2 className="h-6 w-6 flex-shrink-0 text-primary" />
+                <p className="text-sm text-zinc-900">
+                  Professora do Curso de Medicina ITPAC PORTO
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Users className="h-6 w-6 flex-shrink-0 text-primary" />
+                <p className="text-sm text-zinc-900">
+                  Preceptora Voluntária do Programa de Residência Médica em Pediatria - UFT e do Internato de Medicina da UFT
+                </p>
+              </div>
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, scaleX: 0 }}
@@ -74,7 +124,7 @@ export default function About() {
               className="my-10 w-full border-b-[1px] border-zinc-200"
             />
             {/* Doctor profile */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ margin: "-100px" }}
@@ -96,7 +146,7 @@ export default function About() {
                   Médica Reumatologista Pediátrica
                 </p>
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </div>
       </div>
