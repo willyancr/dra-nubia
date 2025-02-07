@@ -102,6 +102,13 @@ export default function About() {
               </div>
 
               <div className="flex items-start gap-3">
+                <Users className="h-6 w-6 flex-shrink-0 text-primary" />
+                <p className="text-sm text-zinc-900">
+                  Membro da Sociedade Brasileira de Reumatologia
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
                 <Building2 className="h-6 w-6 flex-shrink-0 text-primary" />
                 <p className="text-sm text-zinc-900">
                   Professora do Curso de Medicina ITPAC PORTO
