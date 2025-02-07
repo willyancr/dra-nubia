@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div
       id="home"
-      className="bg-image-bg-home-2 relative h-[700px] w-full overflow-hidden"
+      className="bg-image-bg-home-4 relative h-[700px] w-full overflow-hidden"
       ref={ref}
     >
       <div className="container relative mx-auto flex flex-col px-4">
