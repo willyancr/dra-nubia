@@ -76,7 +76,7 @@ export default function About() {
               <div className="flex items-start gap-3">
                 <GraduationCap className="h-6 w-6 flex-shrink-0 text-primary" />
                 <p className="text-sm text-zinc-900">
-                  Graduada em Pedicina pelo Centro Universitário UNIRG (2014)
+                  Graduada em Medicina pelo Centro Universitário UNIRG (2014)
                 </p>
               </div>
 
