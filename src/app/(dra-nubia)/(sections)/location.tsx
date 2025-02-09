@@ -15,7 +15,7 @@ export default function Location() {
         {/* Map Container */}
         <div className="w-full overflow-hidden rounded-lg shadow-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.844224019222!2d-48.336916088815!3d-10.193302989880172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9324cbd30260479f%3A0xd755b0e6eccd0a86!2zVXJiYW4gSW5jb3Jwb3Jhw6fDtWVz!5e0!3m2!1spt-BR!2sbr!4v1738669766383!5m2!1spt-BR!2sbr"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.8440835327538!2d-48.33688628881503!3d-10.193314389880104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9324cb48c9e9e5eb%3A0x2c02818b59c05c9f!2sUrban%20Futuro!5e0!3m2!1spt-BR!2sbr!4v1739143824684!5m2!1spt-BR!2sbr"
             className="h-[450px] w-full"
             style={{ border: 0 }}
             loading="lazy"
@@ -31,7 +31,7 @@ export default function Location() {
           <p className="text-gray-600">
             Edifício Comercial Urban Futuro
             <br />
-            Q. 201 Sul Avenida Joaquim Teotônio Segurado - Sala 301
+            Q. 201 Sul Avenida Joaquim Teotônio Segurado - <strong>Sala 301</strong>
             <br />
             CEP: 77015-202
             <br />

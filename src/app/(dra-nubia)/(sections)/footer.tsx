@@ -20,7 +20,11 @@ export default function Footer() {
             <div className="w-full space-y-2">
               <div className="w-full">
                 <h3 className="font-semibold">Horario de atendimento:</h3>
-                <p className="text-sm">8am-6pm (63) 99281-9154</p>
+                <p className="text-sm">08h às 12h e 14h às 18h</p>
+              </div>
+              <div className="w-full">
+                <h3 className="font-semibold">Telefone</h3>
+                <p className="text-sm">(63) 99281-9154</p>
               </div>
               <div className="w-full">
                 <h3 className="font-semibold">Endereço:</h3>

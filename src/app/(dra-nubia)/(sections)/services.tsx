@@ -29,7 +29,7 @@ const services = [
   {
     title: "Tratamento de doenças autoimunes",
     description:
-      "Condições como lúpus, vasculite e esclerodermia exigem cuidados especializados. Oferecemos gerenciamento abrangente.",
+      "Condições como lúpus, vasculite e esclerodermia exigem cuidados especializados. Oferecemos um acompanhamento amplo e minucioso.",
     icon: "🧑‍⚕️",
     image: "/image_service_4.png",
   },
@@ -51,10 +51,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section
-      id="services"
-      className="bg-image-bg-services py-16 text-center"
-    >
+    <section id="services" className="bg-image-bg-services py-16 text-center">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -65,7 +62,7 @@ export default function Services() {
         Serviços <span className="text-tertiary">Oferecidos</span>
       </motion.h2>
 
-      <div className="mt-10 grid grid-cols-1 gap-6 px-6 md:grid-cols-3">
+      <div className="mt-10 grid grid-cols-1 gap-6 px-6 lg:grid-cols-3">
         {services.map((service, index) => (
           <motion.div
             key={index}
@@ -86,7 +83,7 @@ export default function Services() {
               quality={100}
               className="h-64 w-full rounded-lg object-cover"
             />
-            <Card className="absolute bottom-0 left-1/2 h-full w-11/12 -translate-x-1/2 translate-y-3/4 transform rounded-lg bg-white p-2 shadow-lg md:w-10/12">
+            <Card className="absolute bottom-0 left-1/2 h-full w-11/12 -translate-x-1/2 translate-y-3/4 transform rounded-lg bg-white pt-2 shadow-lg md:w-10/12">
               <CardContent className="text-center">
                 <motion.div
                   initial={{ scale: 0.8 }}
