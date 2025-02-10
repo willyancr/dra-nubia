@@ -98,11 +98,7 @@ export default function Footer() {
                   Whatsapp
                 </RedirectMidiaSocial>
               </li>
-              <li>
-                <RedirectMidiaSocial href="https://www.youtube.com">
-                  YouTube
-                </RedirectMidiaSocial>
-              </li>
+
               <li>
                 <RedirectMidiaSocial href="https://www.linkedin.com/in/">
                   LinkedIn

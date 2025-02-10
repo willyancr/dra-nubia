@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import ButtonBackToTop from "@/components/button-back-to-top";
+import { Analytics } from "@vercel/analytics/react";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,10 +24,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${poppins.className} mx-auto max-w-[1200px] sm:px-6 bg-[#A7D1E6]/15 antialiased`}
+        className={`${poppins.className} mx-auto max-w-[1200px] bg-[#A7D1E6]/15 antialiased sm:px-6`}
       >
         {children}
         <ButtonBackToTop />
+        <Analytics />
       </body>
     </html>
   );
