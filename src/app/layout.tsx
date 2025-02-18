@@ -11,9 +11,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Dra. Núbia | Médica Reumatologista Pediátrica",
+  title: "Dra. Núbia Carmo | Médica Reumatologista Pediátrica",
   description:
-    "Especialista em reumatologia pediátrica, oferecendo um atendimento humanizado e personalizado para crianças com doenças reumatológicas. Agende uma consulta e proporcione mais qualidade de vida ao seu pequeno.",
+    "Especialista em reumatologia pediátrica, oferecendo um atendimento humanizado e personalizado para crianças com doenças reumatológicas. Agende uma consulta!",
 };
 
 export default function RootLayout({
