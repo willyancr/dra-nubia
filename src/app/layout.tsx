@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   title: "Dra. Núbia Carmo | Médica Reumatologista Pediátrica",
   description:
     "Especialista em reumatologia pediátrica, oferecendo um atendimento humanizado e personalizado para crianças com doenças reumatológicas. Agende uma consulta!",
+  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({
