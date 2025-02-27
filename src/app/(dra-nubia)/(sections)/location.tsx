@@ -29,11 +29,11 @@ export default function Location() {
             Endereço do Consultório
           </h3>
           <p className="text-gray-600">
-            Edifício Comercial Urban Futuro
+            Edifício Comercial Urban Futuro - <strong>Sala 301</strong>
             <br />
-            Q. 201 Sul Avenida Joaquim Teotônio Segurado - <strong>Sala 301</strong>
+            Quadra 201 Sul Avenida Joaquim Teotônio Segurado 
             <br />
-            Palmas - TO | CEP: 77015-202
+            CEP: 77015-202 | Palmas - TO 
             <br />
             Tel: (63) 99281-9154
           </p>
