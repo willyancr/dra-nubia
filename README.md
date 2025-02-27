@@ -3,7 +3,7 @@
 Este projeto consiste no site oficial da Dra. Núbia Carmo, médica especialista em reumatologia pediátrica. O objetivo é oferecer informações sobre seus serviços, especialidades e formas de contato para os pacientes, além de facilitar o agendamento de consultas.
 
 
-## Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
 
 - **Next.js 14**
@@ -11,7 +11,7 @@ Este projeto consiste no site oficial da Dra. Núbia Carmo, médica especialista
 - **Shadcn UI:** Biblioteca de componentes estilizados para melhorar a experiência do usuário.
 - **Vercel Analytics :**  Monitoramento de tráfego e desempenho do site.
 
-## Funcionalidades 
+## 🌐 Funcionalidades 
 
 - Informações sobre a especialidade da Dra. Núbia Carmo.
 - Seção de contato para pacientes.
