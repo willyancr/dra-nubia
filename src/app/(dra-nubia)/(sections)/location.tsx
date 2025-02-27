@@ -33,7 +33,7 @@ export default function Location() {
             <br />
             Q. 201 Sul Avenida Joaquim Teotônio Segurado - <strong>Sala 301</strong>
             <br />
-            CEP: 77015-202
+            Palmas - TO | CEP: 77015-202
             <br />
             Tel: (63) 99281-9154
           </p>
