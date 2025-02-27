@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Dra. Núbia Carmo | Médica Reumatologista Pediátrica
 
-## Getting Started
+🏥 Sobre o Projeto
 
-First, run the development server:
+Este projeto consiste no site oficial da Dra. Núbia Carmo, médica especialista em reumatologia pediátrica. O objetivo é oferecer informações sobre seus serviços, especialidades e formas de contato para os pacientes, além de facilitar o agendamento de consultas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🚀 Tecnologias Utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next.js 14 - Framework React para desenvolvimento web moderno e otimizado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+TypeScript - Linguagem para um desenvolvimento mais seguro e escalável.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Tailwind CSS - Framework de estilização para interfaces rápidas e responsivas.
 
-## Learn More
+Shadcn UI - Biblioteca de componentes estilizados para melhorar a experiência do usuário.
 
-To learn more about Next.js, take a look at the following resources:
+Vercel Analytics - Monitoramento de tráfego e desempenho do site.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🌐 Funcionalidades
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Informações sobre a especialidade da Dra. Núbia Carmo.
 
-## Deploy on Vercel
+Seção de contato para pacientes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Design responsivo e otimizado para dispositivos móveis.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+SEO otimizado para melhor indexação no Google.
+
+Favicon e metadados configurados para melhorar a exibição nas pesquisas.
