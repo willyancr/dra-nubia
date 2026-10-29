@@ -1,160 +1,129 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { GraduationCap, Award, Building2, Users, Stethoscope } from "lucide-react";
+import { animate, motion, useInView, useReducedMotion, useScroll, useSpring } from "motion/react";
+import { Brush } from "@/components/brand/brush";
+import { CREDENTIALS, ROLES, TRAINING } from "@/lib/site";
+
+// O ano aparece contando quando entra na tela; sem JavaScript, já mostra o valor final.
+const Year = ({ year }: { year: number }) => {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true, margin: "0px 0px -15% 0px" });
+  const reduce = useReducedMotion();
+
+  useEffect(() => {
+    if (!inView || reduce || !ref.current) return;
+    const node = ref.current;
+    const controls = animate(year - 12, year, {
+      duration: 1.1,
+      ease: [0.16, 1, 0.3, 1],
+      onUpdate: (value) => {
+        node.textContent = String(Math.round(value));
+      },
+    });
+    return () => controls.stop();
+  }, [inView, reduce, year]);
+
+  return (
+    <span ref={ref} className="font-display text-3xl font-bold tabular-nums text-gold-ink md:text-4xl">
+      {year}
+    </span>
+  );
+};
 
 export default function About() {
+  const timelineRef = useRef<HTMLOListElement>(null);
+  const reduce = useReducedMotion();
+  const { scrollYProgress } = useScroll({ target: timelineRef, offset: ["start 80%", "end 60%"] });
+  const line = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
+
   return (
-    <section id="about" className="bg-image-bg-about px-4  py-32">
-      <div className="space-y-8">
-        {/* Main content grid */}
-        <div className="grid items-start gap-8 md:grid-cols-2">
-          {/* Left column with image */}
-          <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ margin: "-100px" }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative overflow-hidden rounded-lg"
-          >
+    <section id="sobre" aria-labelledby="sobre-titulo" className="overflow-x-clip py-[clamp(5rem,10vw,9rem)]">
+      <div className="mx-auto grid max-w-[1240px] gap-14 px-5 lg:grid-cols-12 lg:gap-10 lg:px-12">
+        <div className="relative isolate mx-auto w-full max-w-[24rem] lg:col-span-5 lg:mx-0 lg:max-w-none">
+          <div aria-hidden="true" className="absolute -left-[12%] -right-[8%] top-[18%] -z-10 h-[70%] rotate-[4deg]">
+            <Brush className="size-full" />
+          </div>
+          <div className="relative aspect-[4/5] overflow-hidden rounded-soft bg-blush-mist">
             <Image
-              src="/about_image.png"
-              alt="Doctor consulting with a young patient and parent"
-              width={500}
-              height={400}
-              quality={100}
-              className="w-full object-cover"
+              src="/fotos/dra-nubia-poltrona.jpg"
+              alt="Dra. Núbia Carmo sentada em uma poltrona, sorrindo, com a mão próxima ao queixo"
+              fill
+              quality={90}
+              sizes="(min-width: 1024px) 460px, 384px"
+              className="object-cover object-[50%_30%]"
             />
-          </motion.div>
+          </div>
+        </div>
 
-          {/* Right column with text and services */}
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ margin: "-100px" }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="space-y-6"
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ margin: "-100px" }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="space-y-2"
+        <div className="lg:col-span-6 lg:col-start-7">
+          <h2 id="sobre-titulo" className="font-display text-h2 font-bold">
+            Prazer, sou a Dra. Núbia
+          </h2>
+          <div className="mt-6 max-w-[38rem] space-y-5 text-lead text-plum-soft">
+            <p>
+              Sou pediatra e reumatologista pediátrica. Atendo em Palmas crianças e adolescentes
+              com doenças reumáticas, muitas vezes de famílias que vêm de outras cidades do
+              Tocantins.
+            </p>
+            <p>
+              Doença reumática na infância costuma pedir acompanhamento por anos. Meu trabalho é
+              investigar com calma, explicar cada passo para a família e seguir junto durante o
+              tratamento.
+            </p>
+          </div>
+
+          <ol ref={timelineRef} className="relative mt-12 space-y-8 pl-10">
+            {/* Linha do tempo que se desenha com o scroll */}
+            <svg
+              aria-hidden="true"
+              className="absolute bottom-2 left-3 top-3 w-1 overflow-visible"
+              preserveAspectRatio="none"
+              viewBox="0 0 2 100"
             >
-              <h3 className="text-3xl font-bold tracking-tight text-tertiary">
-                Sobre mim
-              </h3>
-            </motion.div>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ margin: "-100px" }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="leading-relaxed text-muted-foreground text-zinc-900"
-            >
-              Olá! Sou a <strong>Dra. Núbia Carmo</strong>, médica especializada
-              em Reumatologia Pediátrica, dedicada ao cuidado e bem-estar das
-              crianças com doenças reumatológicas.
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ margin: "-100px" }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="space-y-4"
-            >
-              <div className="flex items-start gap-3">
-                <Stethoscope className="h-6 w-6 flex-shrink-0 text-primary" />
-                <p className="text-sm text-zinc-900">
-                  Médica Pediatra e Reumatopediatra CRMTO 3581/ RQE 2025 / RQE 3660
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <GraduationCap className="h-6 w-6 flex-shrink-0 text-primary" />
-                <p className="text-sm text-zinc-900">
-                  Graduada em Medicina pelo Centro Universitário UNIRG (2014)
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <Award className="h-6 w-6 flex-shrink-0 text-primary" />
-                <p className="text-sm text-zinc-900">
-                  Residência Médica em Pediatria pela Universidade Federal do Tocantins - UFT (2017)
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <Award className="h-6 w-6 flex-shrink-0 text-primary" />
-                <p className="text-sm text-zinc-900">
-                  Residência Médica em Reumatologia Pediátrica pela Universidade Estadual de Campinas - UNICAMP (2024)
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <Users className="h-6 w-6 flex-shrink-0 text-primary" />
-                <p className="text-sm text-zinc-900">
-                  Membro da Sociedade Brasileira de Pediatria
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <Users className="h-6 w-6 flex-shrink-0 text-primary" />
-                <p className="text-sm text-zinc-900">
-                  Membro da Sociedade Brasileira de Reumatologia
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <Building2 className="h-6 w-6 flex-shrink-0 text-primary" />
-                <p className="text-sm text-zinc-900">
-                  Professora do Curso de Medicina ITPAC PORTO
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <Users className="h-6 w-6 flex-shrink-0 text-primary" />
-                <p className="text-sm text-zinc-900">
-                  Preceptora Voluntária do Programa de Residência Médica em Pediatria - UFT e do Internato de Medicina da UFT
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scaleX: 0 }}
-              whileInView={{ opacity: 1, scaleX: 1 }}
-              viewport={{ margin: "-100px" }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              className="my-10 w-full border-b-[1px] border-zinc-200"
-            />
-            {/* Doctor profile */}
-            {/* <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ margin: "-100px" }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="flex items-center gap-3 pt-4"
-            >
-              <div className="h-12 w-12 overflow-hidden rounded-full bg-muted">
-                <Image
-                  src="/image_about.jpg"
-                  alt="Doctor profile"
-                  width={48}
-                  height={48}
-                  quality={100}
+              <line x1="1" y1="0" x2="1" y2="100" stroke="var(--color-blush)" strokeWidth="2" vectorEffect="non-scaling-stroke" />
+              <motion.line
+                x1="1"
+                y1="0"
+                x2="1"
+                y2="100"
+                stroke="var(--color-gold)"
+                strokeWidth="2"
+                vectorEffect="non-scaling-stroke"
+                style={{ pathLength: reduce ? 1 : line }}
+              />
+            </svg>
+            {TRAINING.map((item) => (
+              <li key={item.year} className="relative">
+                <span
+                  aria-hidden="true"
+                  className="absolute -left-[2.15rem] top-3 size-3 rounded-full border-2 border-gold bg-paper"
                 />
+                <Year year={item.year} />
+                <p className="mt-1 max-w-[32rem]">{item.text}</p>
+              </li>
+            ))}
+          </ol>
+
+          <ul className="mt-12 grid gap-x-8 gap-y-3 text-[0.9375rem] text-plum-soft sm:grid-cols-2">
+            {ROLES.map((role) => (
+              <li key={role}>{role}</li>
+            ))}
+          </ul>
+
+          <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-4 text-[0.9375rem]">
+            <div>
+              <dt className="text-plum-soft">Registro</dt>
+              <dd className="font-bold">{CREDENTIALS.crm}</dd>
+            </div>
+            {CREDENTIALS.rqes.map((rqe) => (
+              <div key={rqe.number}>
+                <dt className="text-plum-soft">{rqe.specialty}</dt>
+                <dd className="font-bold">{rqe.number}</dd>
               </div>
-              <div>
-                <h4 className="font-semibold">Dra. Núbia Carmo</h4>
-                <p className="text-sm text-muted-foreground">
-                  Médica Reumatologista Pediátrica
-                </p>
-              </div>
-            </motion.div> */}
-          </motion.div>
+            ))}
+          </dl>
         </div>
       </div>
     </section>

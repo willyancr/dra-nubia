@@ -1,21 +1,40 @@
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import "./globals.css";
-import ButtonBackToTop from "@/components/button-back-to-top";
+import type { Metadata, Viewport } from "next";
+import { Bricolage_Grotesque, Nunito_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-import Head from "next/head";
+import { SmoothScroll } from "@/components/smooth-scroll";
+import { SITE_URL } from "@/lib/site";
+import "./globals.css";
 
-const poppins = Poppins({
+// Títulos: grotesca expressiva e calorosa. Texto: sans de terminais arredondados e fácil leitura.
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
   display: "swap",
+  variable: "--font-bricolage",
+});
+
+const nunito = Nunito_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-nunito",
 });
 
 export const metadata: Metadata = {
-  title: "Dra. Núbia Carmo | Médica Reumatologista Pediátrica",
+  metadataBase: new URL(SITE_URL),
+  title: "Dra. Núbia Carmo | Reumatologista Pediátrica em Palmas - TO",
   description:
-    "Especialista em reumatologia pediátrica, oferecendo um atendimento humanizado e personalizado para crianças com doenças reumatológicas. Agende uma consulta!",
+    "Reumatologista pediátrica em Palmas. A Dra. Núbia Carmo investiga e acompanha doenças reumáticas em crianças e adolescentes. Agendamento pelo WhatsApp.",
   icons: { icon: "/favicon.ico" },
+  openGraph: {
+    title: "Dra. Núbia Carmo | Reumatologista Pediátrica",
+    description: "Reumatologia pediátrica em Palmas - TO. Agendamento pelo WhatsApp.",
+    images: ["/fotos/dra-nubia-sorrindo.jpg"],
+    locale: "pt_BR",
+    type: "website",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#F8C8D8",
 };
 
 export default function RootLayout({
@@ -24,48 +43,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "MedicalOrganization",
-              name: "Dra. Núbia Carmo – Reumatologista Pediátrica",
-              url: "https://www.dranubiareumatopediatra.com.br",
-              sameAs: ["https://www.instagram.com/dranubiareumatopediatra"],
-              address: {
-                "@type": "PostalAddress",
-                streetAddress:
-                  "EndUrban Futuro - Q. 201 Sul Avenida Joaquim Teotônio Segurado, 15 - Sala 301 - Plano Diretor Sul",
-                addressLocality: "Palmas",
-                addressRegion: "TO",
-                postalCode: "77015-200",
-              },
-              medicalSpecialty: "Reumatologia Pediátrica",
-              physician: {
-                "@type": "Physician",
-                name: "Dra. Núbia Carmo",
-                medicalSpecialty: "Reumatologia Pediátrica",
-                address: {
-                  "@type": "PostalAddress",
-                  streetAddress:
-                    "EndUrban Futuro - Q. 201 Sul Avenida Joaquim Teotônio Segurado, 15 - Sala 301 - Plano Diretor Sul",
-                  addressLocality: "Palmas",
-                  addressRegion: "TO",
-                  postalCode: "77015-200",
-                },
-              },
-            }),
-          }}
-        />
-      </Head>
-      <body
-        className={`${poppins.className} mx-auto max-w-[1200px] bg-[#A7D1E6]/15 antialiased sm:px-6`}
-      >
-        {children}
-        <ButtonBackToTop />
+    <html lang="pt-BR" className={`${bricolage.variable} ${nunito.variable}`}>
+      <body className="antialiased">
+        <SmoothScroll>{children}</SmoothScroll>
         <Analytics />
       </body>
     </html>
