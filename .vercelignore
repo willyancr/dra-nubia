@@ -1,8 +1,8 @@
-fotos/
-docs/
-.claude/
-.preview/
-DESIGN.md
-PRODUCT.md
-INFOS.md
-AGENTS.md
+/fotos/
+/docs/
+/.claude/
+/.preview/
+/DESIGN.md
+/PRODUCT.md
+/INFOS.md
+/AGENTS.md
